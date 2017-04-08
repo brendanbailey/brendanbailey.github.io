@@ -19,6 +19,7 @@ This script launches a Firefox Browser, logs you into Garnet, and clicks on the 
 •	When you first configure this script/cronjob you should test it after you have signed into Garnet to confirm that it has been configured correctly. The script will execute the exact same way, but will not click the sign in button because it had already been clicked for that day.
 
 **Prerequisites:**
+
 •	Python 2.7 - https://www.continuum.io/downloads
 
 •	Mozilla Firefox - https://www.mozilla.org
