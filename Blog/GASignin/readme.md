@@ -4,6 +4,7 @@ This script launches a Firefox Browser, logs you into Garnet, and clicks on the 
 **Click here to see how it works:** https://www.youtube.com/watch?v=6g_GC0GYklw
 
 **A few caveats before continuing:**
+
 •	Using this script is free, and if you choose to use it then you are accepting it as is. If you find a bug and would like to fix it or would like to contribute a new feature, please do so through GitHub.
 
 •	If there are any changes to your General Assembly campus’s IP Address, you will need to reconfigure the script to add the new IP address.
@@ -28,11 +29,13 @@ This script launches a Firefox Browser, logs you into Garnet, and clicks on the 
 
 **Set Up:**
 **Installing Selenium and Geckodriver:**
+
 1.	Go to your terminal and enter ```pip install selenium```.
 
 2.	Enter ```brew install geckodriver``` into the terminal.
 
 **Configuring the Script:**
+
 3.	Download the script from my repo, and place it in a folder.
 
 4.	Open the script with a text editor and enter the appropriate values for the following variables:
@@ -49,6 +52,7 @@ You can get your campuses IP address by going to campus and Googling “my ip ad
 ![course name](https://brendanbailey.github.io/Blog/GASignin/course_name.png)
 
 **Creating the Cronjob:**
+
 5.	Enter ```env``` and copy the PATH variable.
 
 6.	Enter ``` env EDITOR=nano crontab –e```
