@@ -1,0 +1,143 @@
+/*Thank you Audrey Sonntag for your HMTL and CSS Templates. https://github.com/asonntag*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana;
+    }
+
+body {
+        background-color: #CEEAFC;
+}
+
+#header {
+        z-index: 1;
+        height: 10em;
+        width: 100%;
+        background-color: #6489CF;
+        margin: 0 auto;
+        /*header won't move*/
+        position: fixed;
+        color: #565d5d;
+        text-align: center
+        }
+
+#header img {
+            /*positioned relative to its nearest ancestor (header div)*/
+            position: absolute;
+            border: .3em solid white;
+            /*make image a circle/oval*/
+            border-radius: 50%;
+            width: 10.5em;
+            height: 10.5em;
+            /*top and left refer to the edges of the image*/
+            top: 50%;
+            left: 50%;
+            /*half of the width and height to center */
+            margin-top: -5em;
+            margin-left: -5em;
+            display: inline-block;
+          }
+
+#title {
+            position: absolute;
+            display: table;
+            vertical-align: middle;
+            background-color: white;
+            width: 100%;
+            top: 50%;
+            margin-top: -1.5em;
+            /*table cells won't overlap*/
+            table-layout: fixed;
+            text-overflow: ellipsis;
+}
+
+.wrapper {
+    /*border-radius: 25%;*/
+    color: #565d5d;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+#container {
+            width: 55em;
+            float: middle;
+            /*center horizontally*/
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 10.5em;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+    }
+
+.content {
+    padding-right: 5em;
+    padding-left: 5em;
+    padding-bottom: 1em;
+    color: #7a8585;
+    text-align: left;
+        }
+#portfolio {
+    width: 55em;
+    float: middle;
+    /*center horizontally*/
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    color: #7a8585;
+    }
+
+#portfolio h2{
+  color: #565d5d;
+}
+
+#portfolio img{
+  width: 5em;
+  height: 5em;
+}
+
+.portfolio_text{
+  text-decoration: none;
+  color: #565d5d;
+  font-weight: bold;
+}
+
+#linkies {
+      /*width: 55em;*/
+      float: middle;
+      /*center horizontally*/
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+      }
+
+#linkies a {
+        width: 5em;
+        height: 5em;
+        line-height: 5em;
+        border: .2em solid white;
+        margin-right: 5em;
+      	margin-left: 5em;
+        display: inline-block;
+        background-color: #F9B712;
+        text-align: center;
+        margin-top: 2em;
+        border-radius: 50%;
+        text-decoration: none;
+        color: #565d5d;
+        font-weight: bold;
+}
+
+a {
+  color: #565d5d;
+  text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+}

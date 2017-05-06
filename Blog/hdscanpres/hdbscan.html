@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- Thank you Audrey Sonntag for your HTML and CSS Templates. https://github.com/asonntag-->
+<head>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <title>
+        Brendan Bailey's Github Profile
+    </title>
+</head>
+<html>
+	<body>
+		<div id="header">
+        	<table id="title">
+            	<tr>
+            		<td>
+            			<a href="../../index.html"><img src = "profile.jpg"/></a>
+            		</td>
+            	</tr>
+              <tr>
+                <td>
+                <h2> Brendan </h2>
+              </td>
+              <td>
+                <h2> Bailey </h2>
+              </td>
+              </tr>
+        	</table>
+    	</div>
+    	<div id="container">
+             <div class="wrapper">
+                <div class= "head">
+                    <h3>Lightning Talk: Clustering with HDBScan</h3>
+                </div>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jRDWNfZVERg" frameborder="0" allowfullscreen></iframe>
+            <div class= "content">
+                <br>
+                <p>I was recently asked to give a lightning talk regarding a clustering algorithm called HDBScan. HDBScan is based on the DBScan algorithm, and like other clustering algorithms it is used to group like data together.</p>
+                <br>
+                <p>I covered three main topics during the talk: advantages of HDBScan, implementation, and how it works.</p>
+                <br>
+                <p><b>Advantages</b></p>
+                <br>
+                <p>Regular DBScan is amazing at clustering data of varying shapes, but falls short of clustering data of varying density. You can see this by going to <a href=" https://www.naftaliharris.com/blog/visualizing-dbscan-clustering/">Naftali Harris&#39;s blog post</a> about DBScan and play around with the density bars scatterplot.</p>
+                <br>
+                <p>Below is a recreation of the density bars scatterplot on Naftali&#39;s site. You can see that there is one main center cluster and noise on the left and right.</p>
+                <br>
+                <img src = "density_bars_initial.png"/>
+                <br>
+                <p>After playing with the parameters, below is how DBScan performed. It was able to get the center cluster, but also produced many mini clusters that don&#39;t make that much sense.</p>
+                <br>
+                <img src = "density_bars_db_scan.png"/>
+                <br>
+                <p>Below is how HDBScan performed. I was able to get only one cluster, which I was looking for. Unfortunately, no algorithm is perfect and it did put some of the noise into the purple cluster, but it was closer to what I was looking for than regular DBScan.</p>
+                <br>
+                <img src = "density_bars_hdbscan.png"/>
+                <br>
+                <p>In addition to being better for data with varying density, it&#39;s also faster than regular DBScan. Below is a graph of several clustering algorithms, DBScan is the dark blue and HDBScan is the dark green. At the 200,000 record point, DBScan takes about twice the amount of time as HDBScan. As the amount of records increase, so will the discrepancy between DBScan and HDBScans performance.</p>
+                <br>
+                <img src = "performance_and_scalability_24_1.png"/>
+                <br>
+                <p><b>Implementation</b></p>
+                <br>
+                <p>HDScan is a separate library from scikitlearn so you will either have to pip install it or conda install it.</p>
+                <br>
+                <p>Both algorithms have the minimum number of samples parameter which is the neighbor threshold for a record to become a core point.</p>
+                <br>
+                <p>DBScan has the parameter epsilon, which is the radius those neighbors have to be in for the core to form. Here is the DBScan implementation for the plot above DBSCAN(eps = 0.225, min_samples=4).</p>
+                <br>
+                <p>HDBScan has the parameter minimum cluster size, which is how big a cluster needs to be in order to form. This is more intuitive than epsilon because you probably have an idea of how big your clusters need to be to make actionable decisions on them. Here is the HDBScan implementation for the plot above HDBSCAN(min_samples=11, min_cluster_size=10, allow_single_cluster=True).</p>
+                <br>
+                <p><b>How It Works</b></p>
+                <br>
+                <p>Both algorithms start by finding the core distance of each point, which is the distance between that point and its farthest neighbor defined by the minimum samples parameter. Since the blue dot falls in the green dot&#39;s radius, the green dot can capture the blue dot as part of its cluster. However, the red dot does not fall in the green dot&#39;s radius and vice versa, so neither dot can capture each other (though they can be linked through other dots).</p>
+                <br>
+                <img src = "core_distance.png"/>
+                <br>
+                <p>The potential clusters can form a dendogram, and the cutoff point for DBScan on the dendogram is epsilon.</p>
+                <br>
+                <img src = "dendogram_1.png"/>
+                <br>
+                <p>HDBScan approaches this differently by throwing out the tiny off shoots, and instead keeping the biggest clusters as defined by the minimum cluster size parameter. This results in a more condensed dendogram as seen below.</p>
+                <br>
+                <img src = "dendogram_2.png"/>
+                <br>
+                <p>HDBScan is built for the real-world scenario of having data with varying density, it is relatively fast, and it lets you define what clusters are important to you based on size. Overall, HDBScan seems like a great algorithm. If you would like the link to my slide deck for the corresponding video above, <a href = "https://docs.google.com/presentation/d/1B962cB0yaYc8FM_-rhnEauQrPa3cuyuBldGmB9SiTt8/edit">click here</a>.</p>
+                <br>
+                <p><b>Sources</b></p>
+                <br>
+                <p><a href = "http://hdbscan.readthedocs.io/">HDBScan Docs</a></p>
+                <br>
+                <p><a href = "https://www.youtube.com/watch?v=AgPQ76RIi6A">High Performance Clustering with HDBSCAN Video</a></p>
+                <br>
+                <p><a href= "https://www.naftaliharris.com/blog/visualizing-dbscan-clustering/">Visualizing DBScan Clustering Blog Post</a></p>
+            </div>
+        </div>
+      <div id="linkies">
+        <a href="../../index.html">Home</a>
+      </div>
+	</body>
+</html>
