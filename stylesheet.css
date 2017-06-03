@@ -38,6 +38,11 @@ body {
             display: inline-block;
           }
 
+#header a {
+  text-decoration: none;
+  color:  #f47d0d;
+}
+
 #title {
             position: absolute;
             display: table;
@@ -68,6 +73,18 @@ body {
             overflow: hidden;
             text-align: center;
     }
+
+    #contactcontainer {
+                width: 55em;
+                float: middle;
+                /*center horizontally*/
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 2em;
+                position: relative;
+                overflow: hidden;
+                text-align: center;
+        }
 
 .content {
     padding-right: 5em;
