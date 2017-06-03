@@ -20,6 +20,9 @@ body {
         color: #565d5d;
         text-align: center
         }
+#headerlinks{
+  text-align: right
+}
 
 #header img {
             /*positioned relative to its nearest ancestor (header div)*/
