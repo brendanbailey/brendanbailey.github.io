@@ -62,17 +62,55 @@ body {
     background-color: rgba(255, 255, 255, 0.95);
 }
 
+#recswrapper {
+  color: #565d5d;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-style: solid;
+  /*border-color: #f47d0d;*/
+   border-width: thin;
+}
+
 #container {
             width: 55em;
             float: middle;
             /*center horizontally*/
             margin-left: auto;
             margin-right: auto;
-            padding-top: 10.5em;
+            padding-top: 11.5em;
             position: relative;
             overflow: hidden;
             text-align: center;
     }
+
+    #recscontainer {
+                width: 55em;
+                float: middle;
+                /*center horizontally*/
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 2em;
+                position: relative;
+                overflow: hidden;
+                text-align: center;
+        }
+
+#recscontent {
+  padding-right: 5em;
+  padding-left: 5em;
+  padding-bottom: 1em;
+  color: #7a8585;
+  text-align: left;
+
+}
+
+#recscontent img {
+            border: .3em solid white;
+            /*make image a circle/oval*/
+            border-radius: 50%;
+            width: 10.5em;
+            height: 10.5em;
+            padding-bottom: 1em;
+          }
 
     #contactcontainer {
                 width: 55em;
@@ -146,6 +184,7 @@ body {
         border-radius: 50%;
         text-decoration: none;
         color: #565d5d;
+
         font-weight: bold;
 }
 
