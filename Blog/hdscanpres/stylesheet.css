@@ -21,6 +21,15 @@ body {
         text-align: center
         }
 
+#headerlinks{
+          text-align: right
+        }
+
+#header a {
+          text-decoration: none;
+          color:  #f47d0d;
+        }
+
 #header img {
             /*positioned relative to its nearest ancestor (header div)*/
             position: absolute;
@@ -63,7 +72,7 @@ body {
             /*center horizontally*/
             margin-left: auto;
             margin-right: auto;
-            padding-top: 10.5em;
+            padding-top: 11.5em;
             position: relative;
             overflow: hidden;
             text-align: center;
