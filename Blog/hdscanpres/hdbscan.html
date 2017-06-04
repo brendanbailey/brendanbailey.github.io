@@ -61,7 +61,7 @@
                 <br>
                 <p>Below is how HDBSCAN performed. I was able to get only one cluster, which I was looking for. Unfortunately, no algorithm is perfect and it did put some of the noise into the purple cluster, but it was closer to what I was looking for than regular DBSCAN.</p>
                 <br>
-                <img src = "density_bars_HDBSCAN.png"/>
+                <img src = "density_bars_hdbscan.png"/>
                 <br>
                 <p>In addition to being better for data with varying density, it&#39;s also faster than regular DBSCAN. Below is a graph of several clustering algorithms, DBSCAN is the dark blue and HDBSCAN is the dark green. At the 200,000 record point, DBSCAN takes about twice the amount of time as HDBSCAN. As the amount of records increase, so will the discrepancy between DBSCAN and HDBSCANs performance.</p>
                 <br>
@@ -69,7 +69,7 @@
                 <br>
                 <p><b>Implementation</b></p>
                 <br>
-                <p>HDScan is a separate library from scikitlearn so you will either have to pip install it or conda install it.</p>
+                <p>HDBSCAN is a separate library from scikitlearn so you will either have to pip install it or conda install it.</p>
                 <br>
                 <p>Both algorithms have the minimum number of samples parameter which is the neighbor threshold for a record to become a core point.</p>
                 <br>
@@ -85,11 +85,11 @@
                 <br>
                 <p>The potential clusters can form a dendrogram, and the cutoff point for DBSCAN on the dendrogram is epsilon.</p>
                 <br>
-                <img src = "dendrogram_1.png"/>
+                <img src = "dendogram_1.png"/>
                 <br>
                 <p>HDBSCAN approaches this differently by throwing out the tiny off shoots, and instead keeping the biggest clusters as defined by the minimum cluster size parameter. This results in a more condensed dendrogram as seen below.</p>
                 <br>
-                <img src = "dendrogram_2.png"/>
+                <img src = "dendogram_2.png"/>
                 <br>
                 <p>HDBSCAN is built for the real-world scenario of having data with varying density, it is relatively fast, and it lets you define what clusters are important to you based on size. Overall, HDBSCAN seems like a great algorithm. If you would like the link to my slide deck for the corresponding video above, <a href = "https://docs.google.com/presentation/d/1B962cB0yaYc8FM_-rhnEauQrPa3cuyuBldGmB9SiTt8/edit">click here</a>.</p>
                 <br>
