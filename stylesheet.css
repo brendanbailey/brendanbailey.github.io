@@ -143,7 +143,7 @@ body {
     padding-top: 2em;
     position: relative;
     overflow: hidden;
-    text-align: left;
+    text-align: center;
     color: #7a8585;
     }
 
@@ -152,8 +152,8 @@ body {
 }
 
 #portfolio img{
-  width: 5em;
-  height: 5em;
+  width: 20em;
+  height: 20em;
 }
 
 .portfolio_text{

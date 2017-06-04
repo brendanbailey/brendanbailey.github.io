@@ -49,10 +49,10 @@
                <p>
                 As a former data manager for a national organization, I always admired the work our analytics team did to help guide our organization's strategy.
               </p>
-               <br>
+               <br id = "portfoliojump">
                <p>I wanted to do the same kind of work, which is why I applied to the GA Data Science Immersive. The course teaches data analysis concepts and methods, and how to apply them to the real world for employers and clients.
                </p>
-               <br id = "portfoliojump">
+               <br>
                <p>
                 Combining my programming background with the modeling skills I learned at GA, I am confident that I'll be an asset to any analytics team.
                </p>
@@ -66,25 +66,77 @@
       <div id="portfolio">
         <h2>Portfolio</h2>
         <br>
+        <table id="portfolio_table">
+        <tr>
+        <td>
         <a href="/Blog/Capstone/Capstone-Presentation-Notebook.html">  <img src="Blog/Capstone/pca.png"/ alt=""/></a>
+      </td>
+      <td>
         <a class="portfolio_text" href="/Blog/Capstone/Capstone-Presentation-Notebook.html">Helping Diagnose Cervical Cancer with Neural Networks</a>
-        <p>A Kaggle Competiton on classifiying cervix types to aid the process of treating cervical cancer. This project is an exploration of convolutional neural networks, but ultimately a PCA SVM combo was used for the final submission.</p>
         <br>
-        <a href="/Blog/hdscanpres/hdbscan.html">  <img src="Blog/hdscanpres/density_bars_hdbscan.png"/ alt=""/></a>
-        <a class="portfolio_text" href="/Blog/hdscanpres/hdbscan.html">Lightning Talk: Clustering with HDBScan</a>
-        <p>A lightning talk comparing the benefits of the HDBScan Clustering Algorithm over DBScan.</p>
         <br>
+        <p>A Kaggle Competiton on classifiying cervix types to aid the process of treating cervical cancer.
+        We were given over a 1,000 cervix photos, and had to train a model on how to properly identify cervix type based on those photos.
+        This competition is important because in areas where they do not have resources to do a pap smear, practitioners need to do a visual inspection, which is dependent on cervix type.
+        This project is an exploration of convolutional neural networks, but ultimately a PCA SVM combo was used for the final submission.</p>
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <a class="portfolio_text" href="/Blog/hdscanpres/hdbscan.html">Lightning Talk: Clustering with HDBSCAN</a>
+          <br>
+          <br>
+          <p>HDBSCAN has the benefits of being able to cluster varying shapes like DBSCAN.
+            However, HDBSCAN also performs better on datasets of varying density and is faster with larger datasets.
+            Click the link above to see my presentation on the benefits, how to implement, and how the HDBSCAN algorithm works.
+          </p>
+        </td>
+      <td>
+        <a href="/Blog/hdscanpres/hdbscan.html">  <img src="Blog/hdscanpres/core_distance.png"/ alt=""/></a>
+      </td>
+      </tr>
+      <tr>
+      <td>
         <a href="/Blog/GASignin/garnet_auto_checkin_github.html">  <img src="Blog/GASignin/garnet_youtube.png"/ alt=""/></a>
+      </td>
+      <td>
         <a class="portfolio_text" href="/Blog/GASignin/garnet_auto_checkin_github.html">Garnet Auto Check In with Selenium</a>
-        <p>A browser automation script using Selenium that can be used to sign a student into General Assembly's attendance system. It can help students from forgetting to sign in with the help of a cronjob.</p>
         <br>
+        <br>
+        <p>Garnet is General Assembly's attendance system that students need to sign into everyday at 9am.
+          You can only qualify for certain GA benefits if you have a limited number of tardies.
+          This policy makes sense, but there is nothing worse than coming in before 9am and forgetting to sign in.
+          This Selenium script was developed to help prevent students from getting tardies by automatically signing them into Garnet.</p>
+      </td>
+      </tr>
+      <tr>
+        <td>
+          <a class="portfolio_text" href="/Blog/GAScrape/Which-GA-Campus-Is-Most-Happening.html">Which GA Campus is Most Happening?</a>
+          <br>
+          <br>
+          <p>One of the most valuable services GA provides are events.
+            Events provide opportunities for networking enabling you to find your next job, team member, investor, or to just keep in the know.
+            I webscraped the General Assembly website, so that I could compare which of the campuses had the most events.</p>
+        </td>
+        <td>
         <a href="/Blog/GAScrape/Which-GA-Campus-Is-Most-Happening.html">  <img src="Blog/GAScrape/ga_events_image.jpg"/ alt=""/></a>
-        <a class="portfolio_text" href="/Blog/GAScrape/Which-GA-Campus-Is-Most-Happening.html">Which GA Campus is Most Happening?</a>
-        <p id="recsjump">An analysis on which General Assembly Campus has the most events. This project uses webscraping and matplotlib graphs.</p>
-        <br>
+      </td>
+      </tr>
+      <tr>
+        <td>
         <a href="/Blog/iowa_liquor/project_2_Brendan_Bailey.html">  <img src="Blog/iowa_liquor/barchart.png"/ alt=""/></a>
+      </td>
+      <td>
         <a class="portfolio_text" href="/Blog/iowa_liquor/project_2_Brendan_Bailey.html">Iowa Liquor Sales Forecast</a>
-        <p>This is a General Assembly Class Project using regression analysis to predict Iowa Liquor Sales. This project uses scikitlearn, stats models, pandas, and matplotlib.</p>
+        <br>
+        <br>
+        <p>This is a General Assembly Class Project where we needed to predict 2016 Iowa liquor sales based on 2015 and first quarter 2016 liquor sales.
+          We then had to give a mock client presentation to the Iowa Liquor Board as to whether liquor taxes should be increased.
+          <b id="recsjump"></b>I used a linear regression to predict liquor sales and give my recommendation to the Board.
+        </p>
+      </td>
+      </tr>
+      </table>
       </div>
       <div id="recscontainer">
              <div id="recswrapper">
