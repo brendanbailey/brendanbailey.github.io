@@ -1,209 +1,291 @@
 <!DOCTYPE html>
-<!-- Thank you Audrey Sonntag for your HTML and CSS Templates. https://github.com/asonntag-->
+<html lang="en">
 <head>
-    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-    <title>
-        Brendan Bailey's Github Profile
-    </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brendan Bailey — Senior Data Engineer</title>
+<meta name="description" content="Brendan Bailey is a Senior Data Engineer at Meta and technical lead, based in Los Angeles, CA. 14+ years in data engineering, analytics, and data science.">
+<link rel="stylesheet" href="stylesheet.css">
 </head>
-<html>
-	<body>
-		<div id="header">
-        	<table id="title">
-            	<tr>
-            		<td>
-            			<img src = "profile.jpg"/>
-            		</td>
-            	</tr>
-              <tr>
-                <td>
-                <h2> Brendan Bailey</h2>
-              </td>
-              <td>
-                <div id = "headerlinks">
-                <table>
-                  <tr>
-                <h2><a href="#container">About</a> | <a href="#portfoliojump">Portfolio</a></h2>
-              </tr>
-              <tr>
-                <h2><a href="#recsjump">Recommendations</a> | <a href="#contactcontainer">Contact</a></h2>
-              </tr>
-              </table>
-            </div>
-              </td>
-              </tr>
-        	</table>
-    	</div>
-    	<div id="container">
-             <div class="wrapper">
-                <div class= "head">
-                  <br>
-                    <h3>Data Scientist | Pythonista | Problem Solver</h3>
-                </div>
-            <div class= "content">
-                <br>
-                <p>
-                	<b>I'm a progressive technologist and avid Pythonista who produces quality data solutions for my employers, clients, and users.</b>
-                </p>
-               <br>
-               <p>
-                As a former data manager for a national organization, I always admired the work our analytics team did to help guide our organization's strategy.
-              </p>
-               <br id = "portfoliojump">
-               <p>I wanted to do the same kind of work, which is why I applied to the GA Data Science Immersive. The course teaches data analysis concepts and methods, and how to apply them to the real world for employers and clients.
-               </p>
-               <br>
-               <p>
-                Combining my programming background with the modeling skills I learned at GA, I am confident that I'll be an asset to any analytics team.
-               </p>
-               <br>
-               <p>
-                I'm originally from Los Angeles, and currently based in DC. When I'm not working, I enjoy running, brunching, and kayaking.
-              </p>
-            </div>
-        </div>
-      </div>
-      <div id="portfolio">
-        <h2>Portfolio</h2>
-        <br>
-        <table id="portfolio_table">
-        <tr>
-        <td>
-        <a href="/Blog/Capstone/Capstone-Presentation-Notebook.html">  <img src="Blog/Capstone/pca.png"/ alt=""/></a>
-      </td>
-      <td>
-        <a class="portfolio_text" href="/Blog/Capstone/Capstone-Presentation-Notebook.html">Helping Diagnose Cervical Cancer with Neural Networks</a>
-        <br>
-        <br>
-        <p>A Kaggle Competiton on classifiying cervix types to aid the process of treating cervical cancer.
-        We were given over a 1,000 cervix photos, and had to train a model on how to properly identify cervix type based on those photos.
-        This competition is important because in areas where they do not have resources to do a pap smear, practitioners need to do a visual inspection, which is dependent on cervix type.
-        This project is an exploration of convolutional neural networks, but ultimately a PCA SVM combo was used for the final submission.</p>
-      </td>
-      </tr>
-      <tr>
-        <td>
-          <a class="portfolio_text" href="/Blog/hdscanpres/hdbscan.html">Lightning Talk: Clustering with HDBSCAN</a>
-          <br>
-          <br>
-          <p>HDBSCAN has the benefits of being able to cluster varying shapes like DBSCAN.
-            However, HDBSCAN also performs better on datasets of varying density and is faster with larger datasets.
-            Click the link above to see my presentation on the benefits, how to implement, and how the HDBSCAN algorithm works.
-          </p>
-        </td>
-      <td>
-        <a href="/Blog/hdscanpres/hdbscan.html">  <img src="Blog/hdscanpres/core_distance.png"/ alt=""/></a>
-      </td>
-      </tr>
-      <tr>
-      <td>
-        <a href="/Blog/GASignin/garnet_auto_checkin_github.html">  <img src="Blog/GASignin/garnet_youtube.png"/ alt=""/></a>
-      </td>
-      <td>
-        <a class="portfolio_text" href="/Blog/GASignin/garnet_auto_checkin_github.html">Garnet Auto Check In with Selenium</a>
-        <br>
-        <br>
-        <p>Garnet is General Assembly's attendance system that students need to sign into everyday at 9am.
-          You can only qualify for certain GA benefits if you have a limited number of tardies.
-          This policy makes sense, but there is nothing worse than coming in before 9am and forgetting to sign in.
-          This Selenium script was developed to help prevent students from getting tardies by automatically signing them into Garnet.</p>
-      </td>
-      </tr>
-      <tr>
-        <td>
-          <a class="portfolio_text" href="/Blog/GAScrape/Which-GA-Campus-Is-Most-Happening.html">Which GA Campus is Most Happening?</a>
-          <br>
-          <br>
-          <p>One of the most valuable services GA provides are events.
-            Events provide opportunities for networking enabling you to find your next job, team member, investor, or to just keep in the know.
-            I webscraped the General Assembly website, so that I could compare which of the campuses had the most events.</p>
-        </td>
-        <td>
-        <a href="/Blog/GAScrape/Which-GA-Campus-Is-Most-Happening.html">  <img src="Blog/GAScrape/ga_events_image.jpg"/ alt=""/></a>
-      </td>
-      </tr>
-      <tr>
-        <td>
-        <a href="/Blog/GABreast_Cancer/GA_Breast_Cancer_Project.html">  <img src="Blog/GABreast_Cancer/heatmap.png"/ alt=""/></a>
-      </td>
-      <td>
-        <a class="portfolio_text" href="/Blog/GABreast_Cancer/GA_Breast_Cancer_Project.html">General Assembly Breast Cancer Project</a>
-        <br>
-        <br>
-        <p>A General Assembly project where I was given a dataset of breast tumors and had to build a model, which would determine whether the tumor was benign or malignant based on its physical characteristics.
-          The requirement was to use two different models and compare the<b id="recsjump"></b> performance. I used a logistic model and a random forest, and in the end went with the logistic due to its simplicity and ability to make inferences from it.
-        </p>
-      </td>
-      </tr>
-      </table>
-      </div>
-      <div id="recscontainer">
-             <div id="recswrapper">
-                <div class= "head">
-                  <br>
-                    <h3>Recommendations</h3>
-                </div>
-            <div class= "content">
-              <br>
-              <p>The following are LinkedIn recommendations I received from people I have worked with.</p>
-              <br>
-              <p>-</p>
-              <br>
-            </div>
-            <div id= "recscontent">
-              <img src = "heggie.jpeg"/>
-              <br>
-              <p><b>Eric Heggie</b></p>
-              <p><b>Position:</b> CAP Department at the UAW</p>
-              <p><b>Relationship:</b> Former Client</p>
-              <br>
-              <p>
-                Brendan is an expert at membership data management. He took a complex problem we presented to him, merging multiple sources of data while maintaining a base file, and combined these disparate sources to create a better membership file for the UAW.
-                <br><br>A direct result of Brendan's management of this process was a dramatically increased contact rate with our members during the 2016 cycle. Without Brendan's help this would not be possible, and our program would not have ran as well.
-                <br><br>I would recommend Brendan to anyone for management of a complex data issue with a demanding customer, i.e. me! He is great to work with and came up with innovative solutions to our issues. Can't recommend him enough!
-              </p>
-              <br>
-              <img src = "penson.jpeg"/>
-              <br>
-              <p><b>Michelle Penson</b></p>
-              <p><b>Position:</b> Data Systems & Technology Coordinator at the AFL-CIO</p>
-              <p><b>Relationship:</b> Former Lead</p>
-              <br>
-              <p>
-                Brendan is an extremely skilled data practitioner versed in Python, SQL, Excel, and more. He was invested in creating infrastructure that would allow for our team to provide scalable services, products, and reports to clients big and small. Brendan wrote scripts that enhanced our productivity, which was an important time saver, solving problems for our team making our work more efficient. These included rapid list clean up and formatting everything from membership data to early vote information reducing hour long projects to minutes.
-                <br><br>He used his abilities to not only do the projects that made our team more successful but also to show the team how to harness these skills. He achieved this teaching Python classes for our staff and client staff, helping staff to create macros in order to process repetitive tasks more quickly and coaching others to utilize complex databases and systems he helped to design and build with our IT department. He exercised patience and encouragement during these lessons, helping team members to feel capable and excited about learning high level technical skills often at incredibly busy times.
-                <br><br>His main responsibility at the AFL-CIO was managing our multimillion record membership database. This membership data is the core of both our and our clients&#39; campaign operations, and we would not be able to effectively campaign our members without it. He was an excellent project manager working with client IT Departments to acquire their data, vendors to append critical data, and client Political Directors to ensure they were getting the level of service they needed. Brendan also had an excellent eye for detail, catching and working with clients/vendors on errors that came up in this process that would disrupt program. He also worked closely with our IT Department to take a complicated and onerous system for processing this membership information to an efficient, streamlined one. This allowed for a structure that took our work far beyond previous processes, adding valuable information and analysis of lists for our clients to use for their work and understanding of their membership.
-                <br><br>Brendan was incredibly dedicated to our organization. His departure was bittersweet, but he made sure to work with a current staff member to bring her up to speed over a two-month training period ensuring his leaving was a smooth process. During this time, he created a repository of documentation for processes and prior work as well as an incredibly well-documented codebase in our git version control system (GitLab) ensuring his historical knowledge while at the AFL-CIO is retained for the future.
-                <br><br>Brendan was an incredibly valuable and essential member of our team willing to go above and beyond in his work duties and leaning in any time he was needed. He is not above helping anyone with their work and has a willingness to learn anything he needs to in order to do so.
-              </p>
-              <br>
-              <div class= "content" align = "center">
-              <p>-</p>
-              <br>
-              <p>If you would like to see them on LinkedIn, go to my <b><a href="https://www.linkedin.com/in/bebailey" style="text-decoration: none;color:#7a8585;">profile</a></b> and scroll to the bottom.</p>
-            </div>
-            </div>
-        </div>
-      </div>
-      <div id="contactcontainer">
-             <div class="wrapper">
-                <div class= "head">
-                    <h3>Contact Me</h3>
-                </div>
-            <div class= "content">
-              <br>
-              <p>Want to learn more?</p>
-              <br>
-              <p>Drop me a line at brendan.e.bailey@gmail.com or check out the various links below.</p>
-            </div>
-        </div>
-      </div>
-      <div id="linkies">
-        <a href="Brendan_Bailey_Resume.pdf">Resume</a>
-        <a href="https://medium.com/@brendangallegobailey">Blog</a>
+<body>
+<header class="site-header">
+  <nav>
+    <a class="brand" href="#">Brendan Bailey</a>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#recommendations">Recommendations</a>
+      <a href="#case-studies">Case Studies</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <img class="avatar" src="profile.jpg" alt="Brendan Bailey">
+    <div>
+      <h1>Brendan Bailey</h1>
+      <p class="tagline">Senior Data Engineer at Meta · Data Engineering &amp; Technical Leadership</p>
+      <p class="location">Los Angeles, California</p>
+      <p class="hero-links">
+        <a class="button" href="Brendan_Bailey_Resume.pdf">Resume</a>
         <a href="https://www.linkedin.com/in/bebailey">LinkedIn</a>
         <a href="https://github.com/brendanbailey">GitHub</a>
-        <a href="https://www.instagram.com/bbaileydc/">Insta</a>
+        <a href="mailto:brendan.e.bailey@gmail.com">Email</a>
+      </p>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>I'm a data engineer and technical leader with 14+ years turning messy, high-stakes data into systems people can trust. As a Senior Data Engineer at Meta, I tech-lead a team of four data engineers, building the monitoring and pipelines behind compliance reporting for our products.</p>
+    <p>Before Meta, I was a Data Scientist for the City of Los Angeles on the Mayor's Innovation Team, and a Membership Data Engineer at the AFL-CIO, where I ran a multimillion-record membership database and built the organization's first data warehouse. I hold an MS in Analytics from Georgia Tech, and I'm currently transitioning from data engineering into engineering management.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+
+    <div class="carousel" data-carousel>
+    <article class="job slide active">
+      <div class="job-head">
+        <img class="org-logo" src="logos/meta.svg" alt="Meta logo">
+        <div>
+          <h3>Senior Data Engineer</h3>
+          <p class="meta">Meta · Remote · March 2021 – Present</p>
+        </div>
       </div>
-	</body>
+      <p>Tech lead for a team of four data engineers, building monitoring and reporting that mitigated billions in regulatory compliance risk, and the pipelines and infrastructure behind key companywide launches.</p>
+      <ul>
+        <li>Shipped compliance monitoring under the <a href="https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook">2019 FTC Consent Order</a> (<a href="https://www.reuters.com/article/us-facebook-ftc/facebook-to-pay-record-5-billion-u-s-fine-over-privacy-violations-critics-call-it-a-bargain-idUSKCN1UJ1L9/?feedType=RSS&feedName=businessNews&utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+reuters%2FbusinessNews+%28Business+News%29">$5B penalty</a>).</li>
+        <li>Mentored a junior engineer who built public Reality Labs <a href="https://transparency.meta.com/reports/regulatory-transparency-reports/">transparency reporting</a> under the EU <a href="https://digital-strategy.ec.europa.eu/en/faqs/digital-services-act-questions-and-answers">Digital Services Act</a>.</li>
+        <li>Created the pipelines and reporting that allowed for the launch of Meta Accounts and for users to link and unlink their Facebook and Instagram accounts with their Meta Account.</li>
+        <li>Planned and created the infrastructure behind dashboard and PDF reporting of internal diversity metrics to VP and C-suite executives.</li>
+        <li>Created a code review program pairing team members weekly to share best practices and keep code quality high.</li>
+      </ul>
+    </article>
+
+    <article class="job slide">
+      <div class="job-head">
+        <img class="org-logo" src="logos/los-angeles.svg" alt="City of Los Angeles seal">
+        <div>
+          <h3>Data Scientist</h3>
+          <p class="meta">City of Los Angeles, Innovation Team · Los Angeles, CA · October 2017 – June 2020</p>
+        </div>
+      </div>
+      <p>Provided analysis to city leadership on a variety of policy areas, informing decision makers and supporting communications with the press.</p>
+      <ul>
+        <li>Helped develop the City's COVID-19 pandemic response reporting, used to brief the Mayor, senior staff, and the public.</li>
+        <li>Co-developed and ran multiple randomized controlled trials with UC Berkeley and the Abdul Latif Jameel Poverty Action Lab (J-PAL) to test behaviorally informed outreach to the City's job center clients.</li>
+        <li>Built a machine learning model to estimate LAPD attrition, aiding the department's hiring and budget planning.</li>
+        <li>Launched a Kaggle competition using natural language processing to identify and remove bias from the City's job descriptions.</li>
+      </ul>
+    </article>
+
+    <article class="job slide">
+      <div class="job-head">
+        <img class="org-logo" src="logos/afl-cio.svg" alt="AFL-CIO seal">
+        <div>
+          <h3>Membership Data Engineer</h3>
+          <p class="meta">AFL-CIO · Washington, DC · March 2014 – March 2017</p>
+        </div>
+      </div>
+      <ul>
+        <li>Wrote Python scripts and macros that automated the work of the AFL-CIO's CRM administrators, from user account creation to flat-file production and data uploads.</li>
+        <li>Developed and administered the organization's AWS Redshift data warehouse, the backend for Periscope dashboards used by national and state campaign managers.</li>
+        <li>Managed and developed a multimillion-record Oracle database of client organizations' membership data, with reproducible reports and data products for political directors, departments, and vendors.</li>
+        <li>Audited client membership files to catch critical data issues, and enforced data governance policies with vendors and database users.</li>
+      </ul>
+      <p class="meta">Earlier at the AFL-CIO: Assistant Voter Database Administrator (Nov 2013 – Mar 2014) and Nevada Data Coordinator, Las Vegas, NV (May 2012 – Nov 2013).</p>
+    </article>
+
+    <article class="job slide">
+      <div class="job-head">
+        <img class="org-logo" src="logos/general-assembly.svg" alt="General Assembly logo">
+        <div>
+          <h3>Data Science Instructor</h3>
+          <p class="meta">General Assembly · Los Angeles, CA · February 2019 – February 2020</p>
+        </div>
+      </div>
+      <p>Led one-day Data Science and SQL bootcamps, walking students through data analysis concepts, visualization, and their first classification and regression models.</p>
+    </article>
+      <div class="carousel-controls">
+        <button type="button" class="carousel-prev" aria-label="Previous job">&lsaquo;</button>
+        <div class="carousel-dots">
+          <button type="button" class="carousel-dot active" aria-label="Show Meta role" aria-current="true"></button>
+          <button type="button" class="carousel-dot" aria-label="Show City of Los Angeles role"></button>
+          <button type="button" class="carousel-dot" aria-label="Show AFL-CIO role"></button>
+          <button type="button" class="carousel-dot" aria-label="Show General Assembly role"></button>
+        </div>
+        <button type="button" class="carousel-next" aria-label="Next job">&rsaquo;</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="recommendations">
+    <h2>Recommendations</h2>
+    <p>LinkedIn recommendations from people I have worked with.</p>
+
+    <div class="carousel" data-carousel>
+    <figure class="rec slide active">
+      <div class="rec-head">
+        <img class="rec-photo" src="heggie.jpeg" alt="Eric Heggie">
+        <div>
+          <p class="rec-name"><strong>Eric Heggie</strong></p>
+          <p class="rec-title">CAP Department at the UAW &middot; Former Client</p>
+        </div>
+      </div>
+      <blockquote>
+        <p>Brendan is an expert at membership data management. He took a complex problem we presented to him, merging multiple sources of data while maintaining a base file, and combined these disparate sources to create a better membership file for the UAW.</p>
+        <div class="more-text" hidden>
+        <p>A direct result of Brendan's management of this process was a dramatically increased contact rate with our members during the 2016 cycle. Without Brendan's help this would not be possible, and our program would not have ran as well.</p>
+<p>I would recommend Brendan to anyone for management of a complex data issue with a demanding customer, i.e. me! He is great to work with and came up with innovative solutions to our issues. Can't recommend him enough!</p>
+        </div>
+      </blockquote>
+      <button class="read-more" type="button" aria-expanded="false">Read more</button>
+    </figure>
+
+    <figure class="rec slide">
+      <div class="rec-head">
+        <img class="rec-photo" src="penson.jpeg" alt="Michelle Penson">
+        <div>
+          <p class="rec-name"><strong>Michelle Penson</strong></p>
+          <p class="rec-title">Data Systems &amp; Technology Coordinator at the AFL-CIO &middot; Former Lead</p>
+        </div>
+      </div>
+      <blockquote>
+        <p>Brendan is an extremely skilled data practitioner versed in Python, SQL, Excel, and more. He was invested in creating infrastructure that would allow for our team to provide scalable services, products, and reports to clients big and small. Brendan wrote scripts that enhanced our productivity, which was an important time saver, solving problems for our team making our work more efficient. These included rapid list clean up and formatting everything from membership data to early vote information reducing hour long projects to minutes.</p>
+        <div class="more-text" hidden>
+        <p>He used his abilities to not only do the projects that made our team more successful but also to show the team how to harness these skills. He achieved this teaching Python classes for our staff and client staff, helping staff to create macros in order to process repetitive tasks more quickly and coaching others to utilize complex databases and systems he helped to design and build with our IT department. He exercised patience and encouragement during these lessons, helping team members to feel capable and excited about learning high level technical skills often at incredibly busy times.</p>
+<p>His main responsibility at the AFL-CIO was managing our multimillion record membership database. This membership data is the core of both our and our clients' campaign operations, and we would not be able to effectively campaign our members without it. He was an excellent project manager working with client IT Departments to acquire their data, vendors to append critical data, and client Political Directors to ensure they were getting the level of service they needed. Brendan also had an excellent eye for detail, catching and working with clients/vendors on errors that came up in this process that would disrupt program. He also worked closely with our IT Department to take a complicated and onerous system for processing this membership information to an efficient, streamlined one. This allowed for a structure that took our work far beyond previous processes, adding valuable information and analysis of lists for our clients to use for their work and understanding of their membership.</p>
+<p>Brendan was incredibly dedicated to our organization. His departure was bittersweet, but he made sure to work with a current staff member to bring her up to speed over a two-month training period ensuring his leaving was a smooth process. During this time, he created a repository of documentation for processes and prior work as well as an incredibly well-documented codebase in our git version control system (GitLab) ensuring his historical knowledge while at the AFL-CIO is retained for the future.</p>
+<p>Brendan was an incredibly valuable and essential member of our team willing to go above and beyond in his work duties and leaning in any time he was needed. He is not above helping anyone with their work and has a willingness to learn anything he needs to in order to do so.</p>
+        </div>
+      </blockquote>
+      <button class="read-more" type="button" aria-expanded="false">Read more</button>
+    </figure>
+
+      <div class="carousel-controls">
+        <button type="button" class="carousel-prev" aria-label="Previous recommendation">&lsaquo;</button>
+        <div class="carousel-dots">
+          <button type="button" class="carousel-dot active" aria-label="Show recommendation 1" aria-current="true"></button>
+          <button type="button" class="carousel-dot" aria-label="Show recommendation 2"></button>
+        </div>
+        <button type="button" class="carousel-next" aria-label="Next recommendation">&rsaquo;</button>
+      </div>
+    </div>
+
+    <p class="center">See them on my <a href="https://www.linkedin.com/in/bebailey">LinkedIn profile</a>.</p>
+  </section>
+
+  <section id="case-studies">
+    <h2>Case Studies</h2>
+
+    <div class="carousel" data-carousel>
+    <article class="case slide active">
+      <a href="/Blog/hdscanpres/hdbscan.html"><img class="case-image" src="/Blog/hdscanpres/core_distance.png" alt="Core distance diagram from the HDBSCAN talk"></a>
+      <h3><a href="/Blog/hdscanpres/hdbscan.html">Clustering with HDBSCAN</a></h3>
+      <p class="meta">Lightning talk &middot; General Assembly</p>
+      <p><strong>Problem:</strong> DBSCAN is a go-to clustering algorithm, but it breaks down on clusters of varying density, splitting real groups and inventing spurious ones.</p>
+      <div class="more-text" hidden>
+      <p><strong>Approach:</strong> A lightning talk with a live notebook demo, built around a density-bar visualization, comparing DBSCAN and HDBSCAN on the same data and walking through how HDBSCAN works: core distance, mutual reachability, and the cluster hierarchy.</p>
+      <p><strong>Result:</strong> HDBSCAN produced clean clusters where DBSCAN produced noise, with more control over how many clusters form, and it is faster with larger datasets.</p>
+      </div>
+      <button class="read-more" type="button" aria-expanded="false">Read more</button>
+    </article>
+
+    <article class="case slide">
+      <a href="/Blog/GABreast_Cancer/GA_Breast_Cancer_Project.html"><img class="case-image" src="/Blog/GABreast_Cancer/heatmap.png" alt="Correlation heatmap from the breast cancer project"></a>
+      <h3><a href="/Blog/GABreast_Cancer/GA_Breast_Cancer_Project.html">Classifying Breast Tumors: Benign vs. Malignant</a></h3>
+      <p class="meta">General Assembly &middot; Python, scikit-learn</p>
+      <p><strong>Problem:</strong> Given measurements from breast tumors, build a model that classifies each tumor as benign or malignant.</p>
+      <div class="more-text" hidden>
+      <p><strong>Approach:</strong> Compared two models head to head, logistic regression and random forest, tuning each with grid search and evaluating on held-out data with accuracy, sensitivity, specificity, and ROC curves.</p>
+      <p><strong>Result:</strong> Logistic regression hit 96% accuracy on the test set; the random forest hit 94% (98% on train, a sign of overfitting). I went with logistic: same ballpark, simpler, and its coefficients show which features push a tumor toward malignant or benign, which a forest can&rsquo;t tell you.</p>
+      </div>
+      <button class="read-more" type="button" aria-expanded="false">Read more</button>
+    </article>
+      <div class="carousel-controls">
+        <button type="button" class="carousel-prev" aria-label="Previous case study">&lsaquo;</button>
+        <div class="carousel-dots">
+          <button type="button" class="carousel-dot active" aria-label="Show case study 1" aria-current="true"></button>
+          <button type="button" class="carousel-dot" aria-label="Show case study 2"></button>
+        </div>
+        <button type="button" class="carousel-next" aria-label="Next case study">&rsaquo;</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skill-groups">
+      <div>
+        <h3>Programming</h3>
+        <p>Python (Pandas, Scikit-learn, Beautiful Soup), SQL, R, HTML/CSS, Git</p>
+      </div>
+      <div>
+        <h3>Platforms &amp; Tools</h3>
+        <p>Airflow, AWS, Google Cloud, Tableau, MySQL, PostgreSQL, PrestoSQL, Excel</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul class="edu">
+      <li><strong>MS in Analytics</strong> — Georgia Tech, September 2021 – June 2024</li>
+      <li><strong>Data Science Immersive</strong> — General Assembly, March – May 2017</li>
+      <li><strong>BA in Economics / Political Science</strong> — UC San Diego, 2006 – 2010</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Want to learn more? Drop me a line at <a href="mailto:brendan.e.bailey@gmail.com">brendan.e.bailey@gmail.com</a>.</p>
+    <p class="footer-links">
+      <a href="Brendan_Bailey_Resume.pdf">Resume</a>
+      <a href="https://www.linkedin.com/in/bebailey">LinkedIn</a>
+      <a href="https://github.com/brendanbailey">GitHub</a>
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Brendan Bailey · Los Angeles, California</p>
+</footer>
+
+<script>
+document.querySelectorAll('[data-carousel]').forEach(function (carousel) {
+  var slides = carousel.querySelectorAll('.slide');
+  var dots = carousel.querySelectorAll('.carousel-dot');
+  var index = 0;
+  function show(i) {
+    index = (i + slides.length) % slides.length;
+    slides.forEach(function (s, j) { s.classList.toggle('active', j === index); });
+    dots.forEach(function (d, j) {
+      d.classList.toggle('active', j === index);
+      if (j === index) { d.setAttribute('aria-current', 'true'); } else { d.removeAttribute('aria-current'); }
+    });
+  }
+  var prev = carousel.querySelector('.carousel-prev');
+  var next = carousel.querySelector('.carousel-next');
+  if (prev) { prev.addEventListener('click', function () { show(index - 1); }); }
+  if (next) { next.addEventListener('click', function () { show(index + 1); }); }
+  dots.forEach(function (d, j) { d.addEventListener('click', function () { show(j); }); });
+  show(0);
+});
+
+document.querySelectorAll('.read-more').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var more = btn.parentElement.querySelector('.more-text');
+    var expanded = btn.getAttribute('aria-expanded') === 'true';
+    more.hidden = expanded;
+    btn.setAttribute('aria-expanded', String(!expanded));
+    btn.textContent = expanded ? 'Read more' : 'Read less';
+  });
+});
+</script>
+</body>
 </html>
